@@ -14,6 +14,8 @@ import {
   distortion,
 } from "../../../assets/images";
 
+import banner from '../../../assets/images/banner.jpg'
+
 const champImgs = [champAshe, champAhri, champGaren];
 
 const Welcome = (props) => {
@@ -61,8 +63,8 @@ const Welcome = (props) => {
     <HomeSection
       className={`welcome ${props.isActive ? "active" : ""}`}
       contentClassName="overlay welcome__content"
-      bgImage={bg1}
-    >
+      bgImage={banner}
+    >{/*
       <div className="welcome__info relative">
         <div className="welcome__info__content">
           <div className="title">
@@ -70,21 +72,21 @@ const Welcome = (props) => {
             <h2 className="main-color">Delphium</h2>
           </div>
           <div className="description m-t-4">
-            This is a unique metaverse game and this text is just dummy text because I don't have enough information about the game yet to fill this up with accurate information but I don't really think it matters, after all, this is just showcasing the design and not what the final version of the frontend will look like
+            Delphium is the future of chess, created in the metaverse.
           </div>
           <div className="btns m-t-4">
-            <Button className="btn-main">PLAY NOW</Button>
-            <Button className="btn-second">JOIN A TEAM</Button>
+            <Button className="btn-main">Token presale</Button>
+            <Button className="btn-second">NFT presale</Button>
           </div>
         </div>
-      </div>
+  </div>*/}{/*
       <div className="welcome__img relative">
         <div className="welcome__img__slide" id="welcome__img__slide">
           {champImgs.map((item, index) => (
             <img src={item} key={index} />
           ))}
         </div>
-      </div>
+          </div>*/}
     </HomeSection>
   );
 };

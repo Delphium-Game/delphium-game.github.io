@@ -33,17 +33,19 @@ const Credit = props => {
                 loop={true}
                 className="overlay"
             >
-                <source src={bgVideo} type="video/mp4"/>
+                <source src={"https://www.youtube.com/watch?v=eC1yhM93w8Y"} type="video/mp4"/>
             </video>
             <div className="credit__content">
                 <div className="title">
-                    <span>Start Your</span>
-                    <h2 className="main-color">LEGENDS</h2>
+                    <br />
+                    <br />
+                    <span>Welcome to </span>
+                    <h2 className="main-color">DELPHIUM</h2>
                 </div>
-                <div className="btns m-t-4">
-                    <Button className="btn-main">PLAY NOW</Button>
-                    <Button className="btn-second">GET STARTED</Button>
-                </div>
+                {/*<div className="btns m-t-4">
+                    <Button className="btn-main">Whitepaper</Button>
+                    <Button className="btn-second">DISCORD</Button>
+                </div>*/}
             </div>
         </div>
     )

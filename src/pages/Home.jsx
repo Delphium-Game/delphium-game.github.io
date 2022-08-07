@@ -29,23 +29,24 @@ const Home = () => {
     <>
       <Swiper {...swiperOptions}>
         <SwiperSlide>
-          {({ isActive }) => <Welcome isActive={isActive} />}
+          {({ isActive }) => <Credit isActive={isActive} />}
         </SwiperSlide>
+        {/*<SwiperSlide>
+          {({ isActive }) => <Welcome isActive={isActive} />}
+  </SwiperSlide>*/}
         <SwiperSlide>
           {({ isActive }) => <Champion isActive={isActive} />}
         </SwiperSlide>
         <SwiperSlide>
           {({ isActive }) => <Trailer isActive={isActive} />}
         </SwiperSlide>
-        <SwiperSlide>
-          {({ isActive }) => <Credit isActive={isActive} />}
-        </SwiperSlide>
+        
       </Swiper>
       {championsData.map((item, index) => (
         <ChampionDetail key={index} item={item} id={index} />
       ))}
       <div className="scroll">
-        <span>Scroll to see effect</span>
+        <span>Delphium presale launching soon!</span>
       </div>
     </>
   );

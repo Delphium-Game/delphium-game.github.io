@@ -4,7 +4,12 @@ import HomeSection from '../HomeSection'
 import ChampionCard from './ChampionCard'
 
 import { bg2 } from '../../../assets/images'
-import { championsData } from '../../../assets/dummy'
+import banner from '../../../assets/images/banner.jpg';
+import { championsData } from '../../../assets/dummy';
+import pic1 from '../../../assets/images/Characters/pic1.png'
+import pic2 from '../../../assets/images/Characters/pic2.png'
+import pic3 from '../../../assets/images/Characters/pic3.png'
+import pic4 from '../../../assets/images/Characters/pic4.png'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 
@@ -13,7 +18,7 @@ const Champion = props => {
         <HomeSection
             className={`champion ${props.isActive ? 'active' : ''}`}
             contentClassName="overlay"
-            bgImage={bg2}
+            bgImage={banner}
         >
             <div className="container relative">
                 <div className="champion-list">
